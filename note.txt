@@ -1,0 +1,41 @@
+Employee Management System
+
+Developed by: Harsh Tiwari
+
+Project Overview:
+
+This project is an Employee Management System that allows users to add, view, and filter employees. The frontend is developed using React, and the backend is built with Flask. The data is stored in an SQLite database.
+
+Project Components:
+
+Frontend:
+
+React: A JavaScript library for building user interfaces.
+Axios: A promise-based HTTP client for making API requests.
+
+Backend
+
+Flask: A micro web framework written in Python.
+Flask-SQLAlchemy: An extension for Flask that adds support for SQLAlchemy.
+SQLite: A C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
+Features
+Add Employee: Users can add new employees by entering their name, position, and salary.
+View Employees: Users can view a list of all employees.
+Filter Employees: Users can filter employees by name and minimum salary.
+
+Frontend Code Explanation
+WelcomePage.js
+This component allows the user to add a new employee.
+The form data is managed using the useState hook.
+On form submission, a POST request is sent to the /api/employees endpoint to add the new employee.
+
+EmployeeList.js
+This component fetches and displays the list of employees.
+Employees can be filtered by name and minimum salary using the form inputs.
+The useEffect hook ensures the data is fetched only once when the component mounts.
+
+Backend Code Explanation
+run.py
+The backend is developed using Flask and handles API requests for managing employees.
+Data is stored in an SQLite database.
+The backend provides endpoints to get all employees, add a new employee, update an employee, and delete an employee.
